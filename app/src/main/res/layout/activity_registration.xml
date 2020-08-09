@@ -138,7 +138,7 @@
         tools:ignore="RtlCompat" />
 
     <Button
-        android:id="@+id/btnSignup"
+        android:id="@+id/btnRegistr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
@@ -161,14 +161,14 @@
         android:layout_height="40dp"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:gravity="center|center_horizontal|center_vertical"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignup">
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistr">
 
         <TextView
             android:id="@+id/txtAccount"
@@ -192,4 +192,5 @@
             android:text="Login"
             android:textColor="#07079A" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

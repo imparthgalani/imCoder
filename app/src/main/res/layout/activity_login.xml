@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <Button
-        android:id="@+id/btnSignup"
+        android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
@@ -128,7 +128,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignup">
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin">
 
         <TextView
             android:id="@+id/txtAccount"
@@ -143,7 +143,7 @@
             android:textColor="#FFFFFF" />
 
         <TextView
-            android:id="@+id/txtLogin"
+            android:id="@+id/txtSignup"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="1"

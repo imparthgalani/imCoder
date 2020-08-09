@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Contact"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".Contact" />
         <activity android:name=".SourceCode" />
         <activity android:name=".Game" />
         <activity android:name=".YouTube" />
         <activity android:name=".Tutorial" />
-        <activity android:name=".About" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Registration" />
         <activity android:name=".Login" />

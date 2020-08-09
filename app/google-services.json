@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "39421218806",
+    "firebase_url": "https://im-coder-aa3b2.firebaseio.com",
+    "project_id": "im-coder-aa3b2",
+    "storage_bucket": "im-coder-aa3b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39421218806:android:a56e67df9aae57448681d7",
+        "android_client_info": {
+          "package_name": "com.example.imcoder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39421218806-n9n2kv9h5qcagp6qftnkqtall5af47cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imcoder",
+            "certificate_hash": "f6e0afab6bc7b1f51012628f1abb21e9db4f8427"
+          }
+        },
+        {
+          "client_id": "39421218806-tm9o0nnsd1578hg91v6rarhdglifqd2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOepT99y0lsC0-CvWwXOVvQUNf7lTe4Bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39421218806-tm9o0nnsd1578hg91v6rarhdglifqd2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
