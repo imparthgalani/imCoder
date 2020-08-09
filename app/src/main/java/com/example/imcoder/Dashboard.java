@@ -24,7 +24,7 @@ public class Dashboard extends AppCompatActivity {
         mAbout      =   findViewById(R.id.About);
         mTutorial   =   findViewById(R.id.Tutorial);
         mYoutube    =   findViewById(R.id.Youtube);
-        mSourseode       =   findViewById(R.id.Code);
+        mSourseode  =   findViewById(R.id.Code);
         mGame       =   findViewById(R.id.Game);
         mContact    =   findViewById(R.id.Contact);
 

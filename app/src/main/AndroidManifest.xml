@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.imcoder">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,15 +15,12 @@
         <activity android:name=".Youtube" />
         <activity android:name=".Tutorial" />
         <activity android:name=".About" />
-        <activity android:name=".SourceCode" />
-        <activity android:name=".YouTube" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Registration" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
