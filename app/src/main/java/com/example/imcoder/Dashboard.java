@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity {
 
-    CardView mAbout,mTutorial,mYoutube,mCode,mGame,mContact;
+    CardView mAbout,mTutorial,mYoutube,mSourseode,mGame,mContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,11 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         mAbout      =   findViewById(R.id.About);
+        mTutorial   =   findViewById(R.id.Tutorial);
+        mYoutube    =   findViewById(R.id.Youtube);
+        mSourseode       =   findViewById(R.id.Code);
+        mGame       =   findViewById(R.id.Game);
+        mContact    =   findViewById(R.id.Contact);
 
         mAbout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +34,43 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),About.class));
             }
         });
+
+        mTutorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Tutorial.class));
+            }
+        });
+
+        mYoutube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Youtube.class));
+            }
+        });
+
+        mGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Game.class));
+            }
+        });
+
+        mSourseode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Sourcecode.class));
+            }
+        });
+
+        mContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Contact.class));
+            }
+        });
+
+
     }
 
     public void Logout(View view) {
