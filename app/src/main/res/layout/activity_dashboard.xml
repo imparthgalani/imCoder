@@ -59,14 +59,16 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="178dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -97,14 +99,16 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="179dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -135,13 +139,15 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -173,13 +179,15 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -211,13 +219,15 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -249,13 +259,15 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/rectangle_bg"
+                android:foregroundGravity="center|center_horizontal"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
