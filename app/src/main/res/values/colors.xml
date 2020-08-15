@@ -7,6 +7,10 @@
 
 
     <color name="textColor">#000000</color>
+    <color name="colorBlue">#0d229c</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreen">#087606</color>
+    <color name="colorRed">#f70505</color>
 
 
 </resources>

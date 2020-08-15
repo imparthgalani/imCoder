@@ -7,150 +7,201 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_background"
     tools:context=".Contact">
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
-<View
-        android:id="@+id/dp"
-        android:layout_width="0dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/ic_rectangle_bg1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout11"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imgUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/game" />
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/parth" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtAbout_us"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="5"
-            android:background="@drawable/ic_darkleft"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/ic_dark"
             android:fontFamily="@font/aclonica"
-            android:padding="18dp"
+            android:gravity="center|center_horizontal"
             android:text="Contact Us"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        style="@style/Style_LinearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/dp"
-        app:layout_constraintStart_toStartOf="@+id/dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text"
-            style="@style/Style_textView"
-            android:layout_marginLeft="60dp"
-            android:background="@drawable/ic_brighttop"
-            android:text="Parth Galani" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        style="@style/Style_LinearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/dp"
-        app:layout_constraintStart_toStartOf="@+id/dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            style="@style/Style_imageView"
-            app:srcCompat="@drawable/ic_gender" />
-
-        <TextView
-            android:id="@+id/textView"
-            style="@style/Style_textView"
-            android:background="@drawable/ic_brightleft"
-            android:text="pgalani193@rku.ac.in" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout10"
-        style="@style/Style_LinearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/dp"
-        app:layout_constraintStart_toStartOf="@+id/dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            style="@style/Style_imageView"
-            app:srcCompat="@drawable/ic_gender" />
+            android:id="@+id/txtUser_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Parth Galani"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbout_us" />
 
         <TextView
-            android:id="@+id/textView1"
-            style="@style/Style_textView"
-            android:background="@drawable/ic_brightleft"
-            android:text="8200033848" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout12"
-        style="@style/Style_LinearLayout"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/dp"
-        app:layout_constraintEnd_toEndOf="@+id/dp"
-        app:layout_constraintStart_toStartOf="@+id/dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            style="@style/Style_imageView"
-            app:srcCompat="@drawable/ic_gender" />
+            android:id="@+id/txtUser_email"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="pgalani193@rku.ac.in"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUser_name" />
 
         <TextView
-            android:id="@+id/textView2"
-            style="@style/Style_textView"
-            android:background="@drawable/ic_brightleft"
-            android:text="Amreli" />
-    </LinearLayout>
+            android:id="@+id/txtUser_gender"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="8200033848"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUser_email" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dp" />
+        <TextView
+            android:id="@+id/txtreolies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/colorWhite"
+            android:text="In general, our replies within 24-28 hours."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUser_gender" />
+
+        <EditText
+            android:id="@+id/edtFullname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_bg"
+
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtreolies" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_bg"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFullname" />
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_bg"
+            android:drawableLeft="@drawable/ic_icon_message"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:gravity="start|top|center_vertical"
+            android:inputType="textMultiLine"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/aclonica"
+            android:padding="10dp"
+            android:text="Send Message"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

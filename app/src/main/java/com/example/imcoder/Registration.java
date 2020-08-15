@@ -1,16 +1,18 @@
 package com.example.imcoder;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,26 +21,27 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Registration extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    EditText mFullname,mEmail,mPassword,mPhone;
+    EditText mUsername,mEmail,mPassword,mPhone;
     Button mRegisterBtn;
     TextView mLoginBtn;
+    ProgressBar progressBar;
 
-    // ProgressBar progressBar;
-
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        mFullname   =   findViewById(R.id.edtUsername);
+        mUsername   =   findViewById(R.id.edtUsername);
         mEmail      =   findViewById(R.id.edtEmailAddress);
         mPassword   =   findViewById(R.id.edtPassword);
         mPhone      =   findViewById(R.id.edtPhone);
         mRegisterBtn=   findViewById(R.id.btnRegistr);
         mLoginBtn   =   findViewById(R.id.txtLogin);
+        progressBar   =   findViewById(R.id.progressBar);
 
         mAuth = FirebaseAuth.getInstance();
-        // = findViewById(R.id.);
+
 
         if(mAuth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),Dashboard.class));
@@ -64,6 +67,8 @@ public class Registration extends AppCompatActivity {
                     mPassword.setError("Password Must be >= 6 Characters");
                     return;
                 }
+
+                progressBar.setVisibility(View.VISIBLE);
 
                 mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
